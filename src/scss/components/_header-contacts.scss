@@ -1,0 +1,38 @@
+.header-contacts{
+    @include flex-v-center;
+    
+    &__link{
+        @include flex-column-start;
+
+        &:not(:last-child){
+            margin-right: 35px;
+        }
+    }
+}
+
+.contacts-link{
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding-left: 53px;
+    &__caption{
+        color: var(--color-gray-800);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 150%; /* 21px */
+    }
+
+    &__value{
+        color: var(--color-gray-900);
+        font-size: 18px;
+        line-height: 150%; /* 27px */
+    }
+
+    &--call{
+        background-image: url("../img/phone.svg");
+    }
+
+    &--mail{
+        background-image: url("../img/mail.svg");
+    }
+}

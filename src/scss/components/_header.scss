@@ -1,3 +1,14 @@
-body{
-  background-color: gray;
+.header{
+  padding: 23px 0;
+  &__container{
+    @include flex-all-sb;
+  }
+
+  &__nav{
+    margin-left: -112px;
+  }
+
+  &--main{
+    background-color: var(--color-light);
+  }
 }
