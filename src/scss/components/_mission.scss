@@ -1,0 +1,94 @@
+.mission{
+    background-color: var(--color-light);
+
+    &__list{
+        --mission-gap: 95px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc(var(--mission-gap) * 2);
+        margin-bottom: 27px;
+    }
+
+    &__item{
+        position: relative;
+        padding-top: 69px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 48px 48px;
+        text-align: center;
+
+        &:not(:last-child)
+        {
+            &::after{
+                content: "";
+                position: absolute;
+                right: calc(-1 * var(--mission-gap));
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+            }
+        }
+
+        &--quality{
+            background-image: url("../img/quality.svg");
+        }
+
+        &--safety{
+            background-image: url("../img/safety.svg");
+        }
+
+        &--comfort{
+            background-image: url("../img/comfort.svg");
+        }
+    }
+
+    &__subtitle{
+        margin: 0;
+        margin-bottom: 10px;
+        color: var(--color-ebony);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%; /* 30px */
+    }
+
+    &__descr{
+        margin: 0;
+        color: var(--color-storm);
+        font-size: 16px;
+        line-height: 160%; /* 25.6px */
+    }
+}
+
+.know-form{
+    position: relative;
+    top: 92px;
+    border-radius: 4px;
+    padding: 48px 60px;
+    background: var(--color-light);
+    /* shadow/small */
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    &__content{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__title{
+        margin: 0;
+        margin-bottom: 33px;
+        text-align: center;
+        color: var(--color-ebony);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%; /* 42px */
+    }
+
+    &__field{
+        margin-right: 24px;
+        
+    }
+
+    &__btn{
+        padding: 11px 29px;
+    }
+}
