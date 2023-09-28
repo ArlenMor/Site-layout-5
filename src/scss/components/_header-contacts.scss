@@ -16,14 +16,14 @@
     background-size: 40px 40px;
     padding-left: 53px;
     &__caption{
-        color: var(--color-gray-800);
+        color: var(--color-gray);
         font-size: 14px;
         font-weight: 700;
         line-height: 150%; /* 21px */
     }
 
     &__value{
-        color: var(--color-gray-900);
+        color: var(--color-ebony);
         font-size: 18px;
         line-height: 150%; /* 27px */
     }
