@@ -13,12 +13,12 @@
         height: 44px;
         border-radius: 4px;
         padding-left: 15px;
-        border: 1px solid #d7dAdd;
+        border: 1px solid var(--color-gray400);
         font-size: 14px;
         line-height: 150%; /* 21px */
 
         &::placeholder{
-            color: #9a9ca5;
+            color: var(--color-gray600);
         }
     }
     &--big{
