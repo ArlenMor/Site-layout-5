@@ -6,18 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    &__learn{
-        @include flex-all-center;
-    }
-
-    &__subtitle{
-        margin: 0;
-        margin-right: 40px;
-        color: var(--color-gray900);
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 150%; /* 42px */
-    }
+    
 
     &__list{
         margin-bottom: 80px;
@@ -27,7 +16,7 @@
 .services-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: var(--grid-gap);
 }
 
 .services-item{
