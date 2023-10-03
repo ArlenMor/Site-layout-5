@@ -1,10 +1,14 @@
 .testimonials{
-    padding: 97px 0px;
+    padding-top: 97px;
     background-color: #f4f5f7;
 
     &__container{
         display: flex;
         justify-content: space-between;
+    }
+
+    &__image{
+        margin-bottom: -60px;
     }
 
     &__title{
