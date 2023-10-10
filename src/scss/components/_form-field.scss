@@ -20,12 +20,29 @@
         &::placeholder{
             color: var(--color-gray600);
         }
+
+        &--big{
+            padding-top: 10px;
+             height: 66px;
+             resize: none;
+        }
     }
     &--big{
         flex-grow: 1;
 
         .form-field__input{
             width: 100%;
+        }
+    }
+
+    &--gray{
+        width: 100%;
+
+        .form-field__input{
+            width: 100%;
+            background-color: var(--color-gray200);
+            border-radius: 4px;
+            border: 1px solid var(--color-gray400);
         }
     }
 }
