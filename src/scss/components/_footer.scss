@@ -3,13 +3,6 @@
     background-color: var(--color-gray900);
     color: rgba(255, 255, 255, 0.6);
 
-    &__container{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        gap: var(--grid-gap);
-    }
-
     &__logo{
         margin-right: 60px;
     }
