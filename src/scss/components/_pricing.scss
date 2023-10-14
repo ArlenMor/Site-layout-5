@@ -1,0 +1,130 @@
+.pricing {
+    position: relative;
+
+    padding-top: 82px;
+    padding-bottom: 43px;
+    background-color: var(--color-fray300);
+
+    &__decorate{
+        position: absolute;
+        left: -8px;
+        top: 0;
+    }
+}
+
+.table-wrapper {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid var(--color-gray300);
+    background: var(--color-light);
+    /* shadow/small */
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &__heading {
+        //margin-bottom: 2px;
+        color: var(--color-gray900);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    &__per {
+        color: var(--color-gray700);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    &__th {
+        padding-top: 31px;
+        padding-bottom: 24px;
+        padding-right: 20px;
+
+        &:first-child {
+            color: var(--color-gray900);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+            /* 27px */
+            padding-left: 24px;
+            text-align: left;
+            vertical-align: bottom;
+        }
+    }
+
+    &__body {
+        .table__row {
+            &:nth-child(odd) {
+                background-color: var(--color-gray200);
+            }
+
+            &:last-child {
+                .table__col{
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    &__col {
+        padding: 16px 0;
+        padding-right: 12px;
+        vertical-align: middle;
+        text-align: center;
+        color: var(--color-gray800);
+        /* base/regular */
+        font-family: Ubuntu;
+        font-size: 16px;
+        line-height: 160%;
+
+        /* 25.6px */
+        &:first-child {
+            text-align: left;
+            padding-left: 24px;
+        }
+    }
+
+    &__check {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        background-image: url("../img/table-check.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__text {
+        color: var(--color-gray800);
+        text-align: center;
+        /* base/regular */
+        font-family: Ubuntu;
+        font-size: 16px;
+        line-height: 160%;
+        /* 25.6px */
+    }
+
+    &__btn {
+        padding: 0px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 36px;
+        /* 300% */
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+}
