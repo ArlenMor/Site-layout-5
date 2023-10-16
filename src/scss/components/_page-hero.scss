@@ -1,4 +1,4 @@
-.page-hero{
+.page-hero {
     padding-top: 153px;
     padding-bottom: 80px;
     min-height: 600px;
@@ -6,40 +6,61 @@
     background-repeat: no-repeat;
     background-color: var(--color-gray200);
 
-    &__breadcrumbs{
+    &__breadcrumbs {
         margin-bottom: 40px;
     }
-    
 
-    &__title{
+
+    &__title {
         margin: 0;
         margin-bottom: 23px;
         color: var(--color-gray900);
         max-width: 600px;
         font-size: 72px;
         font-weight: 700;
-        line-height: 130%; /* 93.6px */
+        line-height: 130%;
+        /* 93.6px */
         letter-spacing: 1px;
         text-transform: uppercase;
+
+        &--small {
+            font-size: 64px;
+            line-height: 120%;
+            /* 76.8px */
+            letter-spacing: 1px;
+            text-transform: initial;
+        }
+
+        &--mb{
+            margin-bottom: 60px;
+        }
     }
 
-    &__descr{
+    &__descr {
         margin: 0;
         max-width: 600px;
         color: var(--color-gray700);
         font-size: 20px;
-        line-height: 150%; /* 30px */
+        line-height: 150%;
+        /* 30px */
     }
 
-    &--services{
+    &--services {
         background-image: url("../img/services-hero-bg.png");
     }
 
-    &--services-inner{
+    &--services-inner {
         background-image: url("../img/services-inner-hero-bg.png");
-    
+
     }
-    &--work{
+
+    &--work {
         background-image: url("../img/work-hero-bg.png");
+    }
+
+    &--work-inner {
+        background-color: var(--color-light);
+        background-image: url("../img/work-inner-hero-bg.png");
+        background-position: right -8px top 49px;
     }
 }
