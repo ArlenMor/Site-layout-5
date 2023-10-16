@@ -1,0 +1,128 @@
+.achieve {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-color: var(--color-light);
+    background-image: url("../img/achieve-bg.png");
+    background-position: right -10px bottom -648px;
+    background-repeat: no-repeat;
+
+    &__item {
+        @include flex-column-center;
+        padding-top: 70px;
+        grid-column: 3 span;
+        background-size: 48px;
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        &--reccom {
+            background-image: url("../img/like.svg");
+        }
+
+        &--renov {
+            background-image: url("../img/paint.svg");
+        }
+
+        &--spec {
+            background-image: url("../img/helmet.svg");
+        }
+
+        &--finish {
+            background-image: url("../img/pantone.svg");
+        }
+    }
+
+    &__value {
+        margin-bottom: 8px;
+        color: var(--color-primary);
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    &__text {
+        text-align: center;
+        color: var(--color-gray900);
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    &__list {
+        margin-bottom: 260px;
+    }
+
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__info {
+        position: relative;
+        z-index: 10;
+        flex-shrink: 0;
+        top: -130px;
+        left: -30px;
+        width: 735px;
+        border-radius: 4px;
+        padding: 80px 80px;
+        padding-bottom: 60px;
+        padding-right: 40px;
+        background: var(--color-light);
+        box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+    }
+}
+
+.quote {
+    margin: 0;
+
+    &__content {
+        margin-bottom: 33px;
+        position: relative;
+        padding: 9px 53px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -3px;
+            width: 28px;
+            height: 20px;
+            background-image: url("../img/braces.svg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p {
+            margin: 0;
+            color: var(--color-gray900);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 150%;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__footer {
+        padding: 20px 55px;
+        color: var(--color-gray700);
+        font-size: 14px;
+        line-height: 150%;
+        background-image: url("../img/signature.svg");
+        background-position: right 65px center;
+        background-size: 100px 68px;
+        background-repeat: no-repeat;
+    }
+
+    &__author {
+        margin-bottom: 4px;
+        display: block;
+        color: var(--color-gray900);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 160%;
+    }
+}
