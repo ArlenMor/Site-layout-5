@@ -1,0 +1,16 @@
+.partners-about {
+    padding: 120px 0;
+    background-color: #f4f5f7;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        row-gap: 33px;
+        column-gap: 102px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+}

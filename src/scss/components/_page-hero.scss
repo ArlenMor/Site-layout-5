@@ -67,4 +67,13 @@
     &--about {
         background-image: url("../img/about-hero-bg.png");
     }
+
+    &--positions{
+        background-image: url("../img/positions-hero-bg.png");
+        background-position: right -10px bottom;
+    }
+
+    &--news {
+        background-image: url("../img/news-hero-bg.png");
+    }
 }
