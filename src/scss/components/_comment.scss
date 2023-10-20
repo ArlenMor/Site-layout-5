@@ -1,0 +1,67 @@
+.comment {
+    display: flex;
+
+    &__body {
+        margin-bottom: 19px;
+        color: var(--color-gray800);
+        font-size: 16px;
+        line-height: 160%;
+
+        a{
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        *{
+            margin: 0;
+            margin-bottom: 20px;
+
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+
+    &__left {
+        padding-right: 30px;
+        width: calc(100% - 630px);
+    }
+
+    &__right {
+        width: 630px;
+    }
+
+    &__author {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--color-gray900);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+
+    &__time {
+        color: var(--color-gray700);
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    &__reply {
+        position: relative;
+        top: 2px;
+        display: inline-flex;
+        color: var(--color-gray700);
+        font-size: 14px;
+        line-height: 150%;
+
+        svg{
+            display: block;
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            object-fit: cover;
+            fill: currentColor;
+        }
+    }
+}

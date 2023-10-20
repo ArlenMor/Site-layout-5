@@ -1,0 +1,126 @@
+.post {
+    &__wrapper {
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 840px;
+    }
+
+    &__cover {
+        width: 100%;
+        object-fit: cover;
+        margin-top: -79px;
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+
+        color: var(--color-gray900);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 160%;
+
+        svg {
+            opacity: 1;
+            fill: var(--color-gray700);
+        }
+
+        span{
+            margin-right: 10px;
+        }
+    }
+
+    &__content {
+        padding-top: 77px;
+        padding-bottom: 60px;
+        * {
+            margin-bottom: 28px;
+            font-size: 16px;
+            line-height: 160%;
+            color: var(--color-gray800);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        h2 {
+            margin: 0;
+            color: var(--color-gray900);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 150%;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            margin: 0;
+            color: var(--color-gray900);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 28px;
+        }
+
+        blockquote {
+            margin: 0;
+            position: relative;
+            color: var(--color-gray900);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 150%;
+            padding: 20px 58px;
+            padding-right: 5px;
+            margin-bottom: 28px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 20px;
+                width: 28px;
+                height: 20px;
+                background-image: url("../img/braces.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            color: var(--color-gray800);
+            margin-bottom: 28px;
+            font-size: 16px;
+            line-height: 160%;
+        }
+
+        li {
+            position: relative;
+            padding-left: 32px;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 4px;
+                width: 16px;
+                height: 16px;
+                background-image: url("../img/check-list.svg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
