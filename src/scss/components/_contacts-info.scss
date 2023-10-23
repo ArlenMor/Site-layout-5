@@ -1,0 +1,94 @@
+.contacts-info {
+    padding: 80px;
+    padding-bottom: 120px;
+    background-color: var(--color-gray200);
+
+    &__list {
+        --contacts-gap: 120px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 120px;
+        gap: calc(var(--contacts-gap) * 2);
+    }
+
+    &__soc{
+        margin-bottom: 41px;
+    }
+
+    &__social {
+        justify-content: center;
+
+        .social__item {
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+
+        .social__link {
+            width: 32px;
+            height: 32px;
+
+            svg {
+                fill: var(--color-gray700);
+                opacity: 1;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            &::after {
+                content: "";
+                position: absolute;
+                right: calc(-1 * var(--contacts-gap));
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+            }
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 24px;
+        color: var(--color-gray900);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    &__address {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-style: normal;
+        color: var(--color-gray900);
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: 24px;
+        color: var(--color-primary);
+        border-bottom: 1px solid currentColor;
+        font-size: 16px;
+    }
+
+    &__element {
+        color: var(--color-gray700);
+        font-size: 16px;
+        line-height: 160%;
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+    }
+
+    &__value {
+        color: var(--color-gray900);
+    }
+}

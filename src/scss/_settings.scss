@@ -30,9 +30,10 @@ a {
   display: none !important; // stylelint-disable-line declaration-no-important
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
-  width: 1px;height: 1px;
+  width: 1px;
+  height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
@@ -59,7 +60,7 @@ a {
   max-width: 1260px;
 }
 
-.centered{
+.centered {
   width: 100%;
   text-align: center;
 }
@@ -68,7 +69,7 @@ a {
   outline: none;
 }
 
-.main-title{
+.main-title {
   margin: 0;
   margin-bottom: 25px;
   color: var(--color-gray900);
@@ -78,29 +79,29 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  span{
+  span {
     color: var(--color-primary);
   }
 
-  &--home{
+  &--home {
     color: var(--color-light);
   }
 }
 
-.main-descr{
+.main-descr {
   margin: 0;
   color: var(--color-gray700);
   font-size: 20px;
   line-height: 150%;
-  
 
-  &--home{
+
+  &--home {
     margin-bottom: 61px;
     color: var(--color-light);
   }
 }
 
-.btn{
+.btn {
   display: inline-block;
   border-radius: 4px;
   color: var(--color-light);
@@ -115,70 +116,73 @@ a {
   border-style: solid;
   border-color: transparent;
 
-  &--fill{
+  &--fill {
     background-color: var(--color-primary);
   }
 
-  &--stroke{
-    
-    &-light{
+  &--stroke {
+
+    &-light {
       border-color: var(--color-light);
       color: var(--color-light);
     }
 
-    &-primary{
+    &-primary {
       border-color: var(--color-primary);
       color: var(--color-primary);
     }
   }
 }
 
-.title{
+.title {
   margin: 0;
   margin-bottom: 25px;
   color: var (--color-gray900);
   font-size: 46px;
   font-weight: 700;
-  line-height: 130%; /* 59.8px */
+  line-height: 130%;
+  /* 59.8px */
 
-  &--center{
+  &--center {
     text-align: center;
   }
 }
 
-.descr{
+.descr {
   margin: 0;
   margin-bottom: 60px;
   color: var(--color-gray700);
   font-size: 18px;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
 
-  &--center{
+  &--center {
     text-align: center;
   }
 }
 
-.section-offset{
+.section-offset {
   padding-top: 120px;
 }
 
-.custom-checkbox{
-  &__input{
+.custom-checkbox {
+  &__input {
     position: absolute;
     opacity: 0;
   }
 
-  &__text{
+  &__text {
     display: inline-block;
     position: relative;
     padding-left: 27px;
     color: var(--color-gray800);
     font-family: Ubuntu;
     font-size: 14px;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
+    /* 21px */
   }
 
-  &__text::before{
+  &__text::before {
     content: "";
     position: absolute;
     left: -1px;
@@ -191,7 +195,7 @@ a {
     transition: background-color 0.3s ease-in-out;
   }
 
-  &__text::after{
+  &__text::after {
     content: "";
     position: absolute;
     left: -1px;
@@ -200,26 +204,83 @@ a {
     height: 16px;
     background-image: url("../img/check.svg");
     background-position: center;
-    background-size: 10px 8 px;
+    background-size: 10px 8px;
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  
-  &__input:checked + &__text::before{
+
+  &__input:checked+&__text::before {
     background-color: var(--color-primary);
   }
-  &__input:checked + &__text::after{
+
+  &__input:checked+&__text::after {
     opacity: 1;
   }
 
 
-  &__input:focus + &__text{
+  &__input:focus+&__text {
     outline: 3px solid var(--color-primary);
   }
 }
 
-.grid{
+.custom-radio {
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+    padding-left: 27px;
+    color: var(--color-gray800);
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    display: inline-block;
+    border: 1px solid var(--color-gray500);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  &__text::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/check-circle.svg");
+    background-position: center;
+    background-size: 8px 8px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__input:checked+&__text::before {
+    border-color: var(--color-primary);
+  }
+
+  &__input:checked+&__text::after {
+    opacity: 1;
+  }
+
+  &__input:focus+&__text {
+    outline: 3px solid var(--color-primary);
+  }
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
