@@ -44,12 +44,12 @@
         transition: color 0.3s ease-in-out;
         transition: background-color 0.3s ease-in-out;
 
-        &--active{
+        &--active {
             color: var(--color-light);
             background-color: var(--color-primary);
             pointer-events: none;
 
-            .portfolio-tabs-nav__text{
+            .portfolio-tabs-nav__text {
                 color: var(--color-light)
             }
         }
@@ -72,17 +72,17 @@
         display: none;
         grid-column: 4 span;
 
-        &--visible{
+        &--visible {
             display: block;
         }
 
-        &--visible-more{
+        &--visible-more {
             display: block !important;
         }
     }
 }
 
-.portfolio-more{
+.portfolio-more {
     margin-top: 60px;
     display: inline-flex;
     align-items: center;
@@ -90,15 +90,45 @@
     /* base/bold */
     font-size: 16px;
     font-weight: 700;
-    line-height: 160%; /* 25.6px */
+    line-height: 160%;
+    /* 25.6px */
 
-    svg{
+    svg {
         margin-right: 16px;
         width: 24px;
         height: 24px;
         color: inherit;
         fill: currentColor;
         object-fit: cover;
+    }
 
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+    }
+
+    &:hover {
+        color: var(--color-primary);
+    }
+
+    &:active {
+        color: var(--color-active);
+    }
+}
+
+.portfolio-tabs-nav__btn {
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+    }
+
+    &:hover {
+        .portfolio-tabs-nav__text{
+            color: var(--color-gray900);
+        }
     }
 }

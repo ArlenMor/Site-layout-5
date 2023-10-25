@@ -1,15 +1,23 @@
-.clients{
+.clients {
     padding-top: 180px;
     padding-bottom: 115px;
     background-color: var(--color-light);
-    &__list{
+
+    &__list {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 102px;
     }
 
-    &__title{
+    &__title {
         margin: 0;
         margin-bottom: 60px;
+    }
+
+    &__link {
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
     }
 }

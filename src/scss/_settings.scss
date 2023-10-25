@@ -103,21 +103,35 @@ a {
 
 .btn {
   display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
   border-radius: 4px;
-  color: var(--color-light);
+  padding: 15px 38px;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  padding: 15px 38px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
+  color: var(--color-light);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &--fill {
     background-color: var(--color-primary);
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--color-active);
+    }
+
+    &:active {
+      background-color: var(--color-active);
+    }
   }
 
   &--stroke {
@@ -130,6 +144,21 @@ a {
     &-primary {
       border-color: var(--color-primary);
       color: var(--color-primary);
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary);
+    }
+
+    &:active {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary);
     }
   }
 }

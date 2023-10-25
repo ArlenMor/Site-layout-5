@@ -1,44 +1,52 @@
-.form-field{
+.form-field {
     @include flex-column-start;
 
-    &__caption{
+    &__caption {
         color: var(--color-gray);
         font-size: 14px;
         margin-bottom: 7px;
-        line-height: 150%; /* 21px */
+        line-height: 150%;
+        /* 21px */
     }
-    
-    &__input{
+
+    &__input {
         width: 260px;
         height: 44px;
         border-radius: 4px;
         padding-left: 15px;
         border: 1px solid var(--color-gray400);
         font-size: 14px;
-        line-height: 150%; /* 21px */
+        line-height: 150%;
+        transition: background-color 0.3s ease-in-out;
 
-        &::placeholder{
+        &::placeholder {
             color: var(--color-gray600);
         }
 
-        &--big{
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        &--big {
             padding-top: 10px;
-             height: 66px;
-             resize: none;
+            height: 66px;
+            resize: none;
         }
     }
-    &--big{
+
+    &--big {
         flex-grow: 1;
 
-        .form-field__input{
+        .form-field__input {
             width: 100%;
         }
     }
 
-    &--gray{
+    &--gray {
         width: 100%;
 
-        .form-field__input{
+        .form-field__input {
             width: 100%;
             background-color: var(--color-gray200);
             border-radius: 4px;

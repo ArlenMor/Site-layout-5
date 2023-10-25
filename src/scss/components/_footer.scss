@@ -1,50 +1,52 @@
-.footer{
+.footer {
     padding: 80px 0;
     background-color: var(--color-gray900);
     color: rgba(255, 255, 255, 0.6);
 
-    &__logo{
+    &__logo {
         margin-right: 60px;
     }
 
-    &__left{
+    &__left {
         grid-column: 7 span;
     }
 
-    &__top{
+    &__top {
         @include flex-v-center;
         margin-bottom: 22px;
     }
 
-    &__descr{
+    &__descr {
         margin: 0;
         width: 100%;
         max-width: 495px;
         color: var(--color-light);
         font-size: 14px;
-        line-height: 150%; /* 21px */
+        line-height: 150%;
+        /* 21px */
     }
 
-    &__form{
+    &__form {
         grid-column: 5 span;
     }
 
-    &__address{
+    &__address {
         grid-column: 4 span;
     }
 
-    &__nav{
+    &__nav {
         grid-column: 8 span;
     }
 
-    &__copyright{
+    &__copyright {
         grid-column: 12 span;
         padding-top: 28px;
         color: var(--color-light);
         font-size: 12px;
-        line-height: 150%; /* 18px */
+        line-height: 150%;
+        /* 18px */
 
-        span{
+        span {
             background-image: url("../img/heart.svg");
             background-position: 2px center;
             background-repeat: no-repeat;
@@ -54,105 +56,136 @@
     }
 }
 
-.footer-form{
-    &__title{
+.footer-form {
+    &__title {
         margin: 0;
         margin-bottom: 24px;
         color: var(--color-light);
         font-size: 24px;
         font-weight: 700;
-        line-height: 150%; /* 36px */
+        line-height: 150%;
+        /* 36px */
     }
 
-    &__items{
+    &__items {
         @include flex-v-center;
         margin-bottom: 15px;
     }
 
-    .form-field{
+    .form-field {
         margin: 0;
         width: 364px;
     }
 
-    .form-field__input{
+    .form-field__input {
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         background-color: rgba(255, 255, 255, 0.12);
     }
 
-    &__btn{
+    &__btn {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         padding: 11px 19px;
         letter-spacing: normal;
     }
 
-    &__descr{
+    &__descr {
         margin: 0;
         color: var(--color-light);
         font-size: 12px;
-        line-height: 150%; /* 18px */
+        line-height: 150%;
+        /* 18px */
     }
 }
 
-.footer-title{
+.footer-title {
     margin: 0;
     margin-bottom: 15px;
     color: var(--color-light);
     font-size: 16px;
     font-weight: 700;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.footer-address{
+.footer-address {
     padding-top: 20px;
     font-style: normal;
 
-    &__item{
+    &__item {
         display: block;
         font-size: 16px;
-        line-height: 160%; /* 25.6px */
+        line-height: 160%;
+        /* 25.6px */
 
-        &:not(:last-child)
-        {
+        &:not(:last-child) {
             margin-bottom: 5px;
         }
 
-        a{
+        a {
             color: inherit;
+            transition: color 0.3s ease-in-out;
+
+            &:focus {
+                outline: 2px solid var(--color-primary);
+                outline-offset: 2px;
+            }
+
+            &:hover {
+                color: var(--color-light);
+            }
+
+            &:active {
+                color: var(--color-light);
+            }
         }
     }
 
-    &__name{
+    &__name {
         color: var(--color-light);
     }
 }
 
-.footer-nav{
+.footer-nav {
     padding-top: 20px;
     padding-left: 54px;
     display: flex;
 
-    &__col{
-        &:not(:last-child)
-        {
+    &__col {
+        &:not(:last-child) {
             margin-right: 125px;
         }
     }
 
-    &__item{
-        &:not(:last-child)
-        {
+    &__item {
+        &:not(:last-child) {
             margin-bottom: 4px;
         }
     }
 
-    &__link{
+    &__link {
         font-size: 16px;
-        line-height: 160%; /* 25.6px */
+        line-height: 160%;
+        /* 25.6px */
         color: inherit;
+
+        transition: color 0.3s ease-in-out;
+
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        &:hover {
+            color: var(--color-light);
+        }
+
+        &:active {
+            color: var(--color-light);
+        }
     }
 }

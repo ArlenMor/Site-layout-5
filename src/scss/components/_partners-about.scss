@@ -13,4 +13,11 @@
         margin: 0;
         margin-bottom: 25px;
     }
+
+    &__link{
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+    }
 }

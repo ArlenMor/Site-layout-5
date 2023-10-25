@@ -12,7 +12,7 @@
         gap: calc(var(--contacts-gap) * 2);
     }
 
-    &__soc{
+    &__soc {
         margin-bottom: 41px;
     }
 
@@ -76,6 +76,21 @@
         color: var(--color-primary);
         border-bottom: 1px solid currentColor;
         font-size: 16px;
+
+        transition: color 0.3s ease-in-out;
+
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        &:hover {
+            color: var(--color-active);
+        }
+
+        &:active {
+            color: var(--color-active);
+        }
     }
 
     &__element {
@@ -90,5 +105,19 @@
 
     &__value {
         color: var(--color-gray900);
+        transition: color 0.3s ease-in-out;
+
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        &:hover {
+            color: var(--color-active);
+        }
+
+        &:active {
+            color: var(--color-active);
+        }
     }
 }

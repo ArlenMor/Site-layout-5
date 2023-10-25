@@ -1,22 +1,30 @@
-.header{
+.header {
   padding-top: 23px;
   padding-bottom: 21px;
-  &__container{
+
+  &__container {
     @include flex-all-sb;
   }
 
-  &__nav{
+  &__nav {
     margin-left: -112px;
   }
 
-  &--main{
+  &--main {
     background-color: var(--color-light);
   }
 
-  &--secondary{
+  &--secondary {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+  }
+}
+
+.logo {
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
   }
 }

@@ -5,7 +5,7 @@
     padding-bottom: 43px;
     background-color: var(--color-fray300);
 
-    &__decorate{
+    &__decorate {
         position: absolute;
         left: -8px;
         top: 0;
@@ -70,7 +70,7 @@
             }
 
             &:last-child {
-                .table__col{
+                .table__col {
                     padding-top: 30px;
                     padding-bottom: 30px;
                 }
@@ -123,8 +123,12 @@
         font-size: 12px;
         font-weight: 700;
         line-height: 36px;
-        /* 300% */
         letter-spacing: 0.5px;
         text-transform: uppercase;
+
+        &:focus {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
     }
 }
